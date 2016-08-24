@@ -21,15 +21,12 @@ header a{
     line-height: 40px;
     position: absolute;
     left: 30px;
+    padding-left: 15px;
+    background: url(back.png) no-repeat;
+    background-size: 10px 14px;
+    background-position: 0 14px;
+}
 
-}
-header span{
-    font-size: 4rem;
-    line-height: 40px;
-    position: absolute;
-    margin-left: -15px;
-    margin-top: 0px;
-}
 header p{
     color: #fff;
     font-size: 2.2rem; 
