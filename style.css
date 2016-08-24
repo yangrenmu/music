@@ -20,11 +20,11 @@ header a{
     text-decoration: none;
     line-height: 40px;
     position: absolute;
-    left: 30px;
+    left: 15px;
     padding-left: 15px;
     background: url(back.png) no-repeat;
     background-size: 10px 14px;
-    background-position: 0 14px;
+    background-position: 0 1.4rem;
 }
 
 header p{
