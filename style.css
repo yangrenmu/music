@@ -24,7 +24,7 @@ header a{
     padding-left: 15px;
     background: url(back.png) no-repeat;
     background-size: 10px 14px;
-    background-position: 0 1.2rem;
+    background-position: 0 50%;
 }
 
 header p{
