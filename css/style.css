@@ -6,7 +6,8 @@ html{
     font-size: 62.5%;
 }
 body{
-    font-family: "SimHei";
+    font-family:"Microsoft YaHei" ,"SimHei" ;
+    background: #f5f5f5;
 }
 header{
     width: 100%;
@@ -24,7 +25,7 @@ header a{
     position: absolute;
     left: 15px;
     padding-left: 12px;
-    background: url(back.png) no-repeat;
+    background: url(../img/back.png) no-repeat;
     background-size: 10px 14px;
     background-position: 0 50%;
 }
@@ -42,10 +43,10 @@ header p{
     justify-content:center;
     -webkit-justify-content:center;
     text-align: center;
+    background-color: #fff;
 }
-.navigation li{
-    
-    line-height: 50px;
+.navigation li{ 
+    line-height: 45px;
     flex: 1;
     font-size: 1.8rem;
     display: inline;
@@ -57,4 +58,64 @@ header p{
 }
 .bear img{
     width: 100%;
+}
+.tag{
+    padding-top: 10px;
+    background: #fff;
+}
+.tag ul{
+    width: 94%;
+    margin: 0 auto;
+    display: flex;
+    list-style-type: none;
+    text-align: center;
+}
+.tag li{
+    box-sizing: border-box;
+    padding-top: 10px;  
+    flex: 1;
+    display: inline;  
+    border-bottom: 2px solid #ccc;
+    text-align: center;
+}
+.tag li img{
+    width: 45%;
+}
+.tag li p{
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 40px;
+}
+
+.subfield{
+    background: #fff;
+}
+.subfield ul{
+    width: 94%;
+    margin: 0 auto;
+    display: flex;
+    list-style-type: none;
+    text-align: center;
+    padding: 30px 0;
+}
+.subfield li{
+    flex: 1;  
+    display: inline;
+}
+.subfield .subfield-li02{
+    border-right: 2px solid #ccc;
+    border-left: 2px solid #ccc;
+}
+.subfield li img{
+    width: 100%;
+}
+.subfield ul li .text01{
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 40px;
+}
+.subfield ul li .text02{
+    font-size: 1.8rem;
+    color: #5d5d5d;
+    line-height: 30px;
 }
