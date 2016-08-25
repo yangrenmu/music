@@ -189,11 +189,11 @@ header p{
 }
 .article .text .text01{
     color: #666;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
 }
 .article .text .text02{
     color: #c9c9c9;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     position: absolute;
     bottom: 0;
 }
@@ -204,7 +204,7 @@ header p{
 }
 .article03 h2{
     color: #666;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     line-height: 3rem;
 }
 .article03 .img-box{
@@ -222,6 +222,6 @@ header p{
 }
 .article03 p{
     color: #c9c9c9;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     line-height: 3rem;
 }
