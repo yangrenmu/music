@@ -1,6 +1,6 @@
 *{
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
 html{
     font-size: 62.5%;
@@ -14,14 +14,16 @@ header{
     line-height: 40px;
     text-align: center;
 }
+
+
 header a{
     color: #fff;
     font-size: 1.6rem;
     text-decoration: none;
-    line-height: 40px;
+    line-height: 50px;
     position: absolute;
     left: 15px;
-    padding-left: 10px;
+    padding-left: 12px;
     background: url(back.png) no-repeat;
     background-size: 10px 14px;
     background-position: 0 50%;
@@ -30,7 +32,7 @@ header a{
 header p{
     color: #fff;
     font-size: 2.2rem; 
-    line-height: 40px;
+    line-height: 50px;
 }
 .navigation ul{
     width: 100%;
@@ -39,6 +41,7 @@ header p{
     text-align: center;
 }
 .navigation li{
+    box-sizing: border-box;
     line-height: 50px;
     flex: 1;
     font-size: 2rem;
