@@ -127,7 +127,7 @@ header p{
 .module{
     background: #fff;
     margin: 20px 0;
-    padding: 0 1rem;
+    padding: 0 1rem 1rem;
 }
 .module h2{
     font-size: 2rem;
