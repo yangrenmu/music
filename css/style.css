@@ -48,6 +48,7 @@ header p{
 .navigation li{ 
     line-height: 45px;
     flex: 1;
+    -webkit-flex:1;
     font-size: 1.8rem;
     display: inline;
     color: #676767;
@@ -67,6 +68,7 @@ header p{
     width: 94%;
     margin: 0 auto;
     display: flex;
+    display: -webkit-flex;
     list-style-type: none;
     text-align: center;
 }
@@ -74,6 +76,7 @@ header p{
     box-sizing: border-box;
     padding-top: 10px;  
     flex: 1;
+    -webkit-flex:1;
     display: inline;  
     border-bottom: 2px solid #ccc;
     text-align: center;
@@ -94,12 +97,14 @@ header p{
     width: 94%;
     margin: 0 auto;
     display: flex;
+    display: -webkit-flex;
     list-style-type: none;
     text-align: center;
     padding: 30px 0;
 }
 .subfield li{
     flex: 1;  
+    -webkit-flex:1;
     display: inline;
 }
 .subfield .subfield-li02{
@@ -118,4 +123,105 @@ header p{
     font-size: 1.8rem;
     color: #5d5d5d;
     line-height: 30px;
+}
+.module{
+    background: #fff;
+    margin: 20px 0;
+    padding: 0 20px;
+}
+.module h2{
+    font-size: 2rem;
+    color: #666;
+    line-height: 60px;
+    border-bottom: 2px solid #ccc;
+}
+.module-copy{
+    display: flex;
+    display: -webkit-flex; 
+}
+.module-copy i{
+      
+    flex: 2;
+    -webkit-flex:2;
+    margin: 1.5rem 1.5rem 0 0;
+    border: 2px solid #fdb530;
+}
+.module-copy img{
+    width: 100%;
+    height: 100%;
+}
+.module-copy ul{
+    list-style-type: none;
+    flex: 5;
+    -webkit-flex:5;
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    
+}
+.module-copy li{
+    font-size: 1.6rem;
+
+    flex: 1 40%;
+    -webkit-flex:1 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f8f8f8;
+    margin: 1.5rem 1.5rem 0 0;
+}
+.article{
+    background: #fff;
+    padding: 1rem;
+    display: flex;
+    margin: 0.5rem 0;
+}
+.article i{
+    flex:1;
+    margin: 0 1.5rem 0 0;
+}
+.article img{
+    width: 100%;
+}
+.article .text{
+    flex: 2 ;
+    position: relative;
+}
+.article .text .text01{
+    color: #666;
+    font-size: 1.4rem;
+}
+.article .text .text02{
+    color: #c9c9c9;
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: 0;
+}
+.article03{
+    background: #fff;
+    margin: 0.5rem 0;
+    padding: 0.5rem 1.5rem;
+}
+.article03 h2{
+    color: #666;
+    font-size: 1.4rem;
+    line-height: 3rem;
+}
+.article03 .img-box{
+    display: flex;
+}
+.article03 i{
+    flex: 1;
+}
+.article03 .i-02{
+    flex: 1;
+    margin: 0 1rem;
+}
+.article03 img{
+    width: 100%;
+}
+.article03 p{
+    color: #c9c9c9;
+    font-size: 1.2rem;
+    line-height: 3rem;
 }
