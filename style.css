@@ -39,17 +39,22 @@ header p{
     list-style-type: none;
     display: flex;
     display: -webkit-flex;
-    justify-content:space-between;
+    justify-content:center;
+    -webkit-justify-content:center;
     text-align: center;
 }
 .navigation li{
-    box-sizing: border-box;
+    
     line-height: 50px;
     flex: 1;
-    font-size: 2rem;
+    font-size: 1.8rem;
     display: inline;
     color: #676767;
 }
 .navigation .li02{
+    box-sizing: border-box;
     border-bottom: 4px solid #91D4DA;
+}
+.bear img{
+    width: 100%;
 }
