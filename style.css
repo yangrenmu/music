@@ -38,6 +38,7 @@ header p{
     width: 100%;
     list-style-type: none;
     display: flex;
+    display: -webkit-flex;
     text-align: center;
 }
 .navigation li{
