@@ -65,8 +65,7 @@ function loadXHR() {
 	xhr.onreadystatechange = function() {
 		if (xhr.readyState === 4 && xhr.status === 200) {
 			console.log(xhr.responseText);
-			//hint.innerHTML = xhr.responseText;
-			hint.innerHTML = "xxx";
+			hint.innerHTML = xhr.responseText;
 		}
 	}
 	xhr.open('get', 'ajax.php', true);
