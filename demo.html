@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+	<title>demo</title>
+	<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+		font-family: Courier New, Microsoft Yahei;
+	}	
+	.section-1, .section-2, .section-3 {
+		width: 500px;
+		margin: 20px auto;
+		border: 1px solid #ccc;
+		padding: 10px;
+	}
+	.example-1, .example-2 {
+		margin: 10px 40px;
+	}
+	.example-1 input, .example-2 input {
+		width: 100px;
+		height: 40px;
+		outline: none;
+		border: 1px solid #ccc;
+		background: rgba(100,100,100,0.1);
+		font-size: 16px;
+		margin: 10px 0;
+		cursor: pointer;
+	}
+	table, td, th {
+		width: 300px;
+		border: 1px solid #ccc;
+		border-collapse: collapse;
+		text-align: center;
+		padding: 5px;
+	}
+	.example-3 input{
+		width: 200px;
+		height: 30px;
+		outline: none;
+		border: 1px solid #ccc;
+		font-size: 16px;
+		margin: 10px 40px;
+		padding: 0 5px;
+	}
+	.example-3 p{
+		height: 30px;
+	}
+	</style>
+</head>
+<body>
+	<section class="section-1">
+		<p>简单的示例：</p>
+		<div class="example-1">
+			<input id="input-1" type="button" value="点这点这">
+			<p id="hint-1">显示</p>
+		</div>		
+	</section>
+
+	<section class="section-2">
+		<p>从 XML 文件返回数据：</p>
+		<div class="example-2">
+			<input id="input-2" type="button" value="点这点这">
+			<p id="text-2">显示 XML 中的数据</p>
+			<table id="hint-2"></table>
+		</div>		
+	</section>
+
+	<section class="section-3">
+		<p> ASP/PHP 示例</p>
+		<div class="example-3">
+			<input id="input-3" type="text" name="">
+			<p>提示：<span id="hint-3"></span></p>
+		</div>
+	</section>
+	
+</body>
+<script type="text/javascript">
+"use strict";
+let hintFirst = document.getElementById('hint-1');
+let inputFirst = document.getElementById('input-1');
+let hintSecond = document.getElementById('hint-2');
+let inputSecond = document.getElementById('input-2');
+let inputThird = document.getElementById('input-3');
+let hintThird = document.getElementById('hint-3');
+
+
+addEvent(inputFirst, 'click', loadXHRFirst);
+addEvent(inputSecond, 'click', loadXHRSecond);
+addEvent(inputThird, 'keyup', loadXHRThird);
+function loadXHRThird() {
+	let str = inputThird.value;
+	console.log(str);
+	if (str.length === 0) {
+		hintThird.innerHTML = '';
+		return;
+	}
+	let xhr = new XMLHttpRequest();
+	xhr.onreadystatechange = function() {
+		if (xhr.readyState === 4 && xhr.status === 200) {
+			console.log(xhr.responseText);
+			hintThird.innerHTML = xhr.responseText;
+		}
+	}
+	xhr.open('get', 'getcustomer.php?q='+str, true);
+	xhr.send();
+}
+
+function loadXHRSecond() {
+	let xhr = new XMLHttpRequest();
+	xhr.onreadystatechange = function() {
+		if (xhr.readyState === 4 && xhr.status === 200) {
+			let xhrDoc = xhr.responseXML;			
+			let legend = xhrDoc.getElementsByTagName('legend');	
+			let textSecond = document.getElementById('text-2');	
+			let table = "<tr><th>server</th><th>hero</th></tr>";
+			for (let i = 0; i < legend.length; i++) {
+				table += "<tr><td>" + 
+						 legend[i].getElementsByTagName('server')[0].childNodes[0].nodeValue + 
+						 "</td><td>" + 
+						 legend[i].getElementsByTagName('hero')[0].childNodes[0].nodeValue +
+						 "</td></tr>"
+			}
+			if (textSecond) {
+				textSecond.parentNode.removeChild(textSecond);
+			}
+			hintSecond.innerHTML = table;
+		}
+	}
+	xhr.open('get', 'legend.xml', true);
+	xhr.send();
+}
+
+function loadXHRFirst() {
+	let xhr = new XMLHttpRequest();	
+	xhr.onreadystatechange = function() {
+		if (xhr.readyState === 4 && xhr.status === 200) {
+			hintFirst.innerHTML = xhr.responseText;		
+		}
+	}
+	xhr.open('get', 'ajax.txt', true);
+	xhr.send();	
+}
+function addEvent(element, event, handler) {
+	if (element.addEventListener) {
+		element.addEventListener(event, handler);
+	} else {
+		element.attachEvent('on' + event, handler);
+	}
+}
+</script>
+</html>
