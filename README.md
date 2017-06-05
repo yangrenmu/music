@@ -7,7 +7,7 @@
 
 　　扫描下方二维码 ，可以在移动端进行浏览
   　　<div align="left">
-<img src="http://upload-images.jianshu.io/upload_images/4928722-9f21b31389eea606.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"/>
+　　<img src="http://upload-images.jianshu.io/upload_images/4928722-9f21b31389eea606.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"/>
 </div>
 
 
