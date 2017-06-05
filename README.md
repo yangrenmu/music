@@ -6,7 +6,7 @@
 　　[在线演示](http://yangrenmu.github.io/music/#/recommends)
 
 　　扫描下方二维码 ，可以在移动端进行浏览
-  <div align="left" padding-left="2em">
+  <div align="left" style="padding-left：2em">
 <img src="http://upload-images.jianshu.io/upload_images/4928722-9f21b31389eea606.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"/>
 </div>
 
