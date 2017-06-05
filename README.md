@@ -7,7 +7,7 @@
 
 ## 移动端演示
 
-<img src="http://upload-images.jianshu.io/upload_images/4928722-9f21b31389eea606.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" width = "25%" height = "300" />
+<img src="http://upload-images.jianshu.io/upload_images/4928722-9f21b31389eea606.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" width = "25%"/>
 
 ## Build Setup
 
