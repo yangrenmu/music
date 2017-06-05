@@ -2,7 +2,8 @@
 
 > music app
 
-#演示
+# 演示
+[在线演示](http://yangrenmu.github.io/music/#/recommends)
 
 ## Build Setup
 
