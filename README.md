@@ -34,7 +34,7 @@ For detailed explanation on how things work, checkout the [guide](http://vuejs-t
  * better-scroll：固定高度内滚动插件。
 
 # 项目截图
-　　<p>截图展示部分功能</p>
+　　<p>项目中的部分功能</p>
 <div>
 <img width="40%" src="http://upload-images.jianshu.io/upload_images/4928722-6d389941ebee70e6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"/> 　　　
 <img width="40%" src="http://upload-images.jianshu.io/upload_images/4928722-f6d63f394112596c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"/>
