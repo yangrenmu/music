@@ -36,10 +36,10 @@ For detailed explanation on how things work, checkout the [guide](http://vuejs-t
 # 项目截图
 　　<p>截图展示部分功能</p>
 <div>
-<img width="40%" src="http://upload-images.jianshu.io/upload_images/4928722-6d389941ebee70e6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"/> 
+<img width="40%" src="http://upload-images.jianshu.io/upload_images/4928722-6d389941ebee70e6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"/> 　　　
 <img width="40%" src="http://upload-images.jianshu.io/upload_images/4928722-f6d63f394112596c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"/>
 </div>
 <div>
-<img width="40%" src="http://upload-images.jianshu.io/upload_images/4928722-e05f250cf4bce6a0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"/>
+<img width="40%" src="http://upload-images.jianshu.io/upload_images/4928722-e05f250cf4bce6a0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"/>　　　
 <img width="40%" src="http://upload-images.jianshu.io/upload_images/4928722-a30cb8f31007b7ce.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"/>
 </div>
