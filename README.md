@@ -9,7 +9,7 @@
 
 接口地址为：/music/url?id=347230，
 
-这样使用： http://musicapi.leanapp.cn/music/url?id=347230，可以得到歌曲的 URL 信息
+这样使用： [http://musicapi.leanapp.cn/music/url?id=347230](http://musicapi.leanapp.cn/music/url?id=347230)，可以得到歌曲的 URL 信息
 
 # 演示
 　　[在线演示](http://yangrenmu.github.io/music/#/recommends)
