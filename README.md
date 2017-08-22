@@ -1,10 +1,14 @@
 # music app
 
 * [API来源](https://github.com/Binaryify/NeteaseCloudMusicApi)，感谢[@Binaryify](https://github.com/Binaryify)的网易音乐的接口，这些接口是在本地node的环境中使用，为了可以在线访问，将这些API部署到了[leancloud](https://leancloud.cn/products/)上面。
+
 [接口文档](https://binaryify.github.io/NeteaseCloudMusicApi/#/?id=%e8%8e%b7%e5%8f%96%e9%9f%b3%e4%b9%90-url)
 使用时，将接口地址前加上 http://musicapi.leanapp.cn 即可。
+
 如：获取音乐 url
+
 接口地址为：/music/url?id=347230，
+
 这样使用： http://musicapi.leanapp.cn/music/url?id=347230，可以得到歌曲的 URL 信息
 
 # 演示
