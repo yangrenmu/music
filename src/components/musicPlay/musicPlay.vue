@@ -112,7 +112,7 @@ export default {
   methods: {
     show() {
       this.showFlag = true;
-      this.togglePlay = true;
+      this.$store.commit('setTogglePlay', TOGGLE);
       this.microphonePlay = true;
     },
     get(item) {
